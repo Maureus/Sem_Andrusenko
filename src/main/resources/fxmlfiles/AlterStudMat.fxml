@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1100.0" stylesheets="@../assets/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AlterStudMatController">
+   <children>
+      <TableView fx:id="tableSM" layoutX="14.0" layoutY="14.0" prefHeight="586.0" prefWidth="679.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="107.0" AnchorPane.topAnchor="35.0">
+        <columns>
+          <TableColumn fx:id="col_id" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="col_name" prefWidth="75.0" text="name" />
+            <TableColumn fx:id="col_platnost" prefWidth="75.0" text="platnost" />
+            <TableColumn fx:id="col_popis" prefWidth="75.0" text="popis" />
+            <TableColumn fx:id="col_pocet" prefWidth="75.0" text="pocet stran" />
+            <TableColumn fx:id="col_dv" prefWidth="75.0" text="datum vytv" />
+            <TableColumn fx:id="col_vu" prefWidth="75.0" text="vytvoren uziv" />
+            <TableColumn fx:id="col_dz" prefWidth="75.0" text="datum zmeny" />
+            <TableColumn fx:id="col_zu" prefWidth="75.0" text="zmenen uziv" />
+            <TableColumn fx:id="col_predmet" prefWidth="75.0" text="predmet" />
+            <TableColumn fx:id="col_download" prefWidth="75.0" text="download" />
+            <TableColumn fx:id="col_comments" text="comments" />
+        </columns>
+      </TableView>
+      <FlowPane alignment="TOP_CENTER" hgap="5.0" layoutX="693.0" layoutY="14.0" prefHeight="185.0" prefWidth="90.0" vgap="5.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="35.0">
+         <children>
+            <Button fx:id="addBtn" mnemonicParsing="false" onAction="#addSM" prefHeight="30.0" prefWidth="70.0" text="Add" />
+            <Button fx:id="edditBtn" mnemonicParsing="false" onAction="#edditSM" prefHeight="29.0" prefWidth="70.0" text="Eddit" />
+            <Button fx:id="deleteBtn" mnemonicParsing="false" onAction="#deleteSM" prefHeight="30.0" prefWidth="70.0" text="Delete" />
+            <Button fx:id="kvizBtn" mnemonicParsing="false" onAction="#createKviz" prefHeight="30.0" prefWidth="70.0" text="Kviz" />
+         </children>
+      </FlowPane>
+      <FlowPane layoutX="14.0" layoutY="5.0" prefHeight="30.0" prefWidth="442.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="5.0">
+         <children>
+            <ComboBox fx:id="cbPredmet" onAction="#changeFilter" prefWidth="150.0" promptText="Predmet" />
+         </children>
+      </FlowPane>
+   </children>
+</AnchorPane>

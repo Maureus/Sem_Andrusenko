@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #2E5266;" stylesheets="@../assets/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane layoutY="79.0" prefHeight="320.0" prefWidth="700.0" style="-fx-background-color: #fafafa;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="79.0">
+         <children>
+            <TextField fx:id="loginField" layoutX="203.0" layoutY="76.0" prefHeight="25.0" prefWidth="295.0" promptText="Login" AnchorPane.leftAnchor="203.0" AnchorPane.topAnchor="76.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="passwordField" layoutX="203.0" layoutY="135.0" prefHeight="25.0" prefWidth="295.0" promptText="Password" AnchorPane.leftAnchor="203.0" AnchorPane.topAnchor="135.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </PasswordField>
+            <Button graphicTextGap="0.0" layoutX="304.0" layoutY="219.0" mnemonicParsing="false" onAction="#logIn" text="Login" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="304.0" AnchorPane.topAnchor="219.0">
+               <font>
+                  <Font name="Arial" size="22.0" />
+               </font>
+            </Button>
+            <Button fx:id="loginSignUpButton" layoutX="625.0" layoutY="282.0" mnemonicParsing="false" text="Register" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="282.0" />
+            <Label layoutX="525.0" layoutY="286.0" text="Not Registered?" textFill="#2e5266" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="309.0" layoutY="21.0" text="ELSA" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="32.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="64.0" fitWidth="64.0" layoutX="14.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="8.0">
+         <image>
+            <Image url="@../assets/note.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

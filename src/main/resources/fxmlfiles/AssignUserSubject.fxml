@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../assets/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AssignUserSubjectController">
+   <children>
+      <ListView fx:id="lvSubjects" layoutX="24.0" layoutY="56.0" prefHeight="293.0" prefWidth="562.0" AnchorPane.bottomAnchor="56.0" AnchorPane.leftAnchor="19.0" AnchorPane.rightAnchor="19.0" AnchorPane.topAnchor="50.0" />
+      <FlowPane alignment="CENTER_LEFT" hgap="5.0" layoutX="24.0" prefHeight="49.0" prefWidth="443.0" vgap="5.0" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ComboBox fx:id="cbUser" prefWidth="150.0" promptText="Select User" />
+            <ComboBox fx:id="cbSubject" prefWidth="150.0" promptText="Select Predmet" />
+            <Button mnemonicParsing="false" onAction="#assignSubject" prefHeight="25.0" prefWidth="106.0" text="Assign Subject" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" right="5.0" top="5.0" />
+         </padding>
+      </FlowPane>
+      <Button layoutX="24.0" layoutY="368.0" mnemonicParsing="false" onAction="#withdrawSubject" prefHeight="30.0" prefWidth="122.0" text="Withdraw Selected" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="19.0" />
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</AnchorPane>

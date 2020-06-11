@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="606.0" prefWidth="803.0" stylesheets="@../assets/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AlterSubjectWindowController">
+   <children>
+      <FlowPane alignment="TOP_CENTER" hgap="10.0" layoutX="552.0" layoutY="14.0" prefHeight="201.0" prefWidth="233.0" vgap="10.0" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="14.0">
+         <children>
+            <TextField fx:id="nazevSubject" prefHeight="30.0" prefWidth="180.0" promptText="Nazev" />
+            <TextField fx:id="zkratkaSubject" prefHeight="30.0" prefWidth="180.0" promptText="Zkratka" />
+            <ComboBox fx:id="cbSemestr" prefHeight="30.0" prefWidth="180.0" promptText="Semestr" />
+            <TextField fx:id="rocnikSubject" prefHeight="30.0" prefWidth="180.0" promptText="Rocnik" />
+            <TextField fx:id="bodySubject" prefHeight="30.0" prefWidth="180.0" promptText="Body" />
+            <Button mnemonicParsing="false" onAction="#addSubject" prefHeight="30.0" prefWidth="80.0" text="Add" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </FlowPane>
+      <Button layoutX="14.0" layoutY="560.0" mnemonicParsing="false" onAction="#deleteSelected" prefHeight="32.0" prefWidth="106.0" text="Delete Selected" />
+      <TableView fx:id="tvCategory" layoutX="20.0" layoutY="19.0" prefHeight="537.0" prefWidth="538.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0">
+        <columns>
+          <TableColumn fx:id="col_nazev" onEditCommit="#changeNazevCellEvent" prefWidth="93.0" text="nazev" />
+            <TableColumn fx:id="col_zkratka" onEditCommit="#changeZkratkaCellEvent" prefWidth="130.0" text="zkratka" />
+            <TableColumn fx:id="col_semestr" onEditCommit="#changeSemestrCellEvent" prefWidth="51.0" text="semestr" />
+            <TableColumn fx:id="col_rocnik" onEditCommit="#changeRocnikCellEvent" prefWidth="60.0" text="rocnik" />
+            <TableColumn fx:id="col_body" onEditCommit="#changeBodyCellEvent" prefWidth="60.0" text="body" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

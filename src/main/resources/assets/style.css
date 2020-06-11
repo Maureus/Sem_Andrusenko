@@ -1,0 +1,54 @@
+Button:hover, ComboBox:hover {
+
+-fx-cursor: hand;
+
+}
+
+.button{
+    -fx-background-color:  #2E5266;
+    -fx-background-radius: 3;
+    -fx-text-fill: white;
+}
+
+.button:hover{
+    -fx-background-color:  white;
+    -fx-background-radius: 3;
+    -fx-text-fill: #2E5266;
+    -fx-border-color: #2E5266;
+    -fx-border-radius: 3;
+}
+
+.combo-box{
+    -fx-background-color:  white;
+    -fx-border-color: #2E5266;
+    -fx-border-radius: 3;
+    -fx-background-radius: 3;
+}
+
+.choice-box{
+    -fx-border-color: #2E5266;
+    -fx-border-radius: 3;
+    -fx-background-radius: 3;
+}
+
+.text-field{
+    -fx-border-color: #2E5266;
+    -fx-border-radius: 3;
+}
+
+.table-view{
+    -fx-text-fill: #2E5266;
+    -fx-border-color: #2E5266;
+    -fx-border-radius: 3;
+}
+
+.text-area{
+    -fx-border-color: #2E5266;
+    -fx-border-radius: 3;
+}
+
+.list-view{
+    -fx-text-fill: #2E5266;
+    -fx-border-color: #2E5266;
+    -fx-border-radius: 3;
+}

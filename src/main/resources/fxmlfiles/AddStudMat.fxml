@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="pane" prefHeight="400.0" prefWidth="290.0" style="-fx-border-color: #2E5266;" stylesheets="@../assets/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AddStudMatController">
+   <children>
+      <FlowPane hgap="10.0" layoutX="14.0" layoutY="14.0" prefHeight="295.0" prefWidth="264.0" vgap="10.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0">
+         <children>
+            <Button fx:id="chooseFile" mnemonicParsing="false" prefHeight="25.0" prefWidth="118.0" text="Choose File" />
+            <Label text="(Pdf, txt)" />
+            <TextField fx:id="pocetStran" prefHeight="25.0" prefWidth="235.0" promptText="pocet stran" />
+            <TextArea fx:id="popis" prefHeight="99.0" prefWidth="235.0" promptText="popis" />
+            <DatePicker fx:id="datePlatnost" prefHeight="25.0" prefWidth="235.0" promptText="platnost" />
+            <ChoiceBox fx:id="cbPredmety" prefHeight="25.0" prefWidth="235.0" />
+            <ChoiceBox fx:id="cbKategorie" prefHeight="25.0" prefWidth="235.0" />
+         </children>
+      </FlowPane>
+      <Button layoutX="14.0" layoutY="342.0" mnemonicParsing="false" onAction="#addNewStudMat" prefHeight="44.0" prefWidth="93.0" text="ADD" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" />
+   </children>
+</AnchorPane>

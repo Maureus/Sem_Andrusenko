@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="467.0" prefWidth="705.0" stylesheets="@../assets/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AlterUsersController">
+   <children>
+      <TableView fx:id="tableView" layoutX="14.0" layoutY="14.0" prefHeight="330.0" prefWidth="574.0" AnchorPane.bottomAnchor="123.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+         <columns>
+            <TableColumn fx:id="tableCol2" prefWidth="75.0" text="user_id" />
+            <TableColumn fx:id="tableCol1" onEditCommit="#changeJmenoCellEvent" prefWidth="75.0" text="Jmeno" />
+            <TableColumn fx:id="tableCol3" onEditCommit="#changePrijmeniCellEvent" prefWidth="75.0" text="Prijmeni" />
+            <TableColumn fx:id="tableCol4" onEditCommit="#changeLoginCellEvent" prefWidth="75.0" text="Login" />
+            <TableColumn fx:id="tableCol5" onEditCommit="#changeHesloCellEvent" prefWidth="75.0" text="Heslo" />
+            <TableColumn fx:id="tableCol6" onEditCommit="#changeEmailCellEvent" prefWidth="75.0" text="Email" />
+            <TableColumn fx:id="tableCol7" onEditCommit="#changePhoneCellEvent" prefWidth="75.0" text="Phone" />
+            <TableColumn fx:id="tableCol8" onEditCommit="#changeRoleCellEvent" prefWidth="75.0" text="role_id" />
+         </columns></TableView>
+      <FlowPane alignment="CENTER_LEFT" hgap="5.0" layoutX="14.0" layoutY="366.0" prefHeight="100.0" prefWidth="677.0" vgap="5.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0">
+         <children>
+            <TextField fx:id="tfName" prefHeight="25.0" prefWidth="89.0" promptText="Jmeno" />
+            <TextField fx:id="tfSurname" prefHeight="25.0" prefWidth="104.0" promptText="Prijmeni" />
+            <TextField fx:id="tfLogin" prefHeight="25.0" prefWidth="123.0" promptText="login" />
+            <TextField fx:id="tfPassword" prefHeight="25.0" prefWidth="120.0" promptText="password" />
+            <ComboBox fx:id="cbRole" prefHeight="25.0" prefWidth="90.0" promptText="roleID" visibleRowCount="5" />
+            <Button mnemonicParsing="false" onAction="#addUser" text="Add User" />
+            <Button mnemonicParsing="false" onAction="#deleteUser" text="Delet User" />
+         </children>
+         <padding>
+            <Insets left="5.0" right="5.0" />
+         </padding>
+      </FlowPane>
+   </children>
+</AnchorPane>
